@@ -2,6 +2,8 @@
 
 Estos motores cantan y bailan.
 
+_Inspirado en el proyecto de Neil Mendoza "Ponytron" https://vimeo.com/104345696_
+
 ## Materiales
 
 - 1x Arduino Uno (o similar)
