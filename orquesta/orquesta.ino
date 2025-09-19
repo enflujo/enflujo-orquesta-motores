@@ -104,50 +104,68 @@ void setup() {
   pinMode(PIN_PASO, OUTPUT);
   pinMode(PIN_DIR, OUTPUT);
 
-  tempo(116);
+  tempo(70);
   transponer(0); 
   direccionDefecto(false);
 }
 
 void loop() {
-  // Barra 1
-  nota(FA, 4, CORCHEA);
-  nota(LA, 4, CORCHEA, BEMOL);
-  nota(FA, 4, CORCHEA);
-  nota(DO, 5, CORCHEA);
-  nota(FA, 4, CORCHEA);
-  nota(LA, 4, CORCHEA, BEMOL);
-  nota(FA, 4, CORCHEA);
-  nota(DO, 5, CORCHEA);
+  nota(RE, 4, NEGRA);
+  silencio(T_CORCHEA);
+  nota(FA, 4, T_CORCHEA);
+  nota(LA, 4, T_CORCHEA);
+  nota(RE, 4, T_CORCHEA);
+  nota(FA, 4, T_CORCHEA);
+  nota(LA, 4, T_NEGRA);
+  nota(RE, 4, BLANCA); 
 
-  // Barra 2 (variante)
-  nota(FA, 4, CORCHEA);
-  nota(LA, 4, CORCHEA, BEMOL);
-  nota(FA, 4, CORCHEA);
-  nota(DO, 5, CORCHEA);
-  nota(FA, 4, CORCHEA);
-  nota(LA, 4, CORCHEA, BEMOL);
-  nota(FA, 4, CORCHEA);
-  nota(MI, 5, CORCHEA, BEMOL);   // MI♭ (color característico)
+  silencio(T_CORCHEA);
+  nota(FA, 4, T_CORCHEA);
+  nota(LA, 4, T_CORCHEA);
+  nota(RE, 4, T_CORCHEA);
+  nota(FA, 4, T_CORCHEA);
+  nota(LA, 4, T_NEGRA);
+  nota(RE, 4, BLANCA);
 
-  // Repite barras 1–2 a gusto (4x típico)
+  silencio(T_CORCHEA);
+  nota(SOL, 4, T_CORCHEA);
+  nota(FA, 4, T_CORCHEA);
+  nota(SOL, 4, T_CORCHEA);
+  nota(FA, 4, T_CORCHEA);
+  nota(RE, 4, BLANCA);
 
-  nota(MI, 5, CORCHEA, BEMOL);
-  nota(FA, 5, CORCHEA);
-  nota(SOL,5, CORCHEA);
-  nota(LA, 5, CORCHEA, BEMOL);
-  nota(SI, 5, CORCHEA, BEMOL);
-  nota(LA, 5, CORCHEA, BEMOL);
-  nota(SOL,5, CORCHEA);
-  nota(FA, 5, CORCHEA);
+  nota(FA, 4, T_CORCHEA, SOSTENIDO);
+  nota(LA, 4, T_CORCHEA);
+  nota(RE, 5, T_CORCHEA);
+  nota(FA, 4, T_CORCHEA, SOSTENIDO);
+  nota(LA, 4, T_CORCHEA);
+  nota(RE, 5, T_CORCHEA);
+  nota(SOL, 4, NEGRA);
 
-  nota(MI, 5, CORCHEA, BEMOL);
-  nota(FA, 5, CORCHEA);
-  nota(SOL,5, CORCHEA);
-  nota(LA, 5, CORCHEA, BEMOL);
-  nota(SI, 5, CORCHEA, BEMOL);
-  nota(LA, 5, CORCHEA, BEMOL);
-  nota(SOL,5, CORCHEA);
-  nota(DO, 5, CORCHEA);
+  silencio(T_CORCHEA);
+  nota(SI, 4, NEGRA, BEMOL);
+  nota(RE, 5, T_CORCHEA);
+  nota(SI, 4, NEGRA, BEMOL);
+  nota(SOL, 4, NEGRA);
+  nota(RE, 5, T_CORCHEA);
+  nota(SI, 4, NEGRA, BEMOL);
+  nota(SOL, 4, NEGRA);
+  nota(MI, 4, BLANCA);
 
+  nota(SOL, 4, T_CORCHEA);
+  nota(DO, 5, T_CORCHEA);
+  nota(MI, 4, T_CORCHEA);
+  nota(SOL, 4, T_CORCHEA);
+  nota(DO, 5, T_CORCHEA);
+  nota(FA, 4, BLANCA);
+
+  nota(RE, 4, SEMICORCHEA);
+  nota(FA, 4, SEMICORCHEA);
+  nota(LA, 4, SEMICORCHEA);
+  nota(RE, 5, SEMICORCHEA);
+  nota(DO, 4, CORCHEA);
+  nota(SI, 4, SEMICORCHEA, BEMOL);
+  nota(LA, 4, CORCHEA);
+  nota(SOL, 4, CORCHEA);
+  nota(RE, 4, BLANCA);
 }
